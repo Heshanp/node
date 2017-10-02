@@ -8,6 +8,7 @@ app.use(bodyParser.json);
 Genre = require('./models/genre');
 Book = require('./models/book');
 
+//mongod --dbpath "d:\mongoserver" Start the local server first.
 mongoose.connect('mongodb://localhost/bookstore');
 var db = mongoose.Connection;
 
